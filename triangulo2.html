@@ -1,0 +1,27 @@
+<canvas width="1200" height="800">
+	
+</canvas>
+
+
+<script>
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+var x = 40;
+
+pincel.fillStyle = 'black';
+pincel.beginPath();
+pincel.moveTo( 2 * x,  2 * x);
+pincel.lineTo( 2 * x, 16 * x);
+pincel.lineTo(16 * x, 16 * x);
+pincel.fill();
+
+pincel.fillStyle = 'white';
+pincel.beginPath();
+pincel.moveTo( 4 * x,  7 * x);
+pincel.lineTo( 4 * x, 14 * x);
+pincel.lineTo(11 * x, 14 * x);
+pincel.fill();
+
+</script>
