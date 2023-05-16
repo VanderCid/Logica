@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    
+    var numero = parseInt(prompt("tabuada de que numero?"));
+    var limite = parseInt(prompt("até que numero?"));
+    var multiplicador = 0;
+
+    while(multiplicador <= limite) {
+        mostra(numero * multiplicador);
+        multiplicador = multiplicador + 1;
+    }
+
+</script>
